@@ -1,3 +1,22 @@
+.error-message {
+  padding: 7px;
+  background-color: rgba(255, 0, 0, 0.212);
+  border-radius: 10px;
+
+  h3,
+  li {
+    color: rgb(255, 46, 46);
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+}
+
 .page-container {
   background-color: rgba(0, 89, 255, 0.041);
   height: 100vh;
