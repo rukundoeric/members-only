@@ -10,7 +10,7 @@
 
   <div class="row post-list p-3">
   <% @posts.each do |post| %>
-    <article class="col-xl-4">
+    <article class="col-xl-4 my-3">
      <div class="post-item p-3">
        <h2 class="title"><%= link_to  post.title, post_path(post), class: 'title-link' %></h2>
         <p class="body"><%= post.body %></p>
