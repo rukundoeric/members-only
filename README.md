@@ -17,7 +17,7 @@ In this project, we implemented an exclusive clubhouse where members can write e
 - run `bundle install` to install the requered gems
 - then run `yarn install` to setup webpack and install all its packages
 - If the installation is complete, go ahead and setup the database by running migration with this command `rails db:migrate`
-- Then finally start the app by running `rails s`
+- Then finally start the app by running `rails s` and then run the application on this url `http://localhost:3000/` in your browser
 
 ### Live Demo
 
@@ -25,15 +25,24 @@ In this project, we implemented an exclusive clubhouse where members can write e
 
 ## Author
 
-👤 **Mohammed Al-Asfar**
-
-- Github: [@elasfarc](https://github.com/elasfarc)
-
 👤 **Rukundo Eric**
 
 - GitHub: [@githubhandle](https://github.com/rukundoeric)
 - Twitter: [@twitterhandle](https://twitter.com/rukundoeric005)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rukundo-eric-000bba181/)
+
+👤 **Mohammed Al-Asfar**
+
+- Github: [@elasfarc](https://github.com/elasfarc)
+- Twitter: [@elasfarc](https://github.com/elasfarc)
+- LinkedIn: [LinkedIn](https://github.com/elasfarc)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/tnyandoro/tic-tac-toe/issues).
+
 
 ## Show your support
 
@@ -42,3 +51,7 @@ If you've read this far, pls give us a ⭐️!
 ## Acknowledgments
 
 - My thanks also goes to Microverse and all our peers and colleagues there.
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
