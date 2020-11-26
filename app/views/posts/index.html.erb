@@ -1,0 +1,31 @@
+<%= render "commons/header" %>
+<div class="container post-index">
+  <%- if user_signed_in?%>
+    <div class="d-flex align-items-end flex-row mt-3">
+      <div class="p-2">
+        <%= link_to 'New Post', new_post_path, class: 'new-post pb-2' %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="row post-list p-3">
+  <% @posts.each do |post| %>
+    <article class="col-xl-4 my-3">
+     <div class="post-item p-3">
+       <h2 class="title"><%= link_to  post.title, post_path(post), class: 'title-link' %></h2>
+        <p class="body"><%= post.body %></p>
+        <%- if user_signed_in?%>
+          <div class="profile mt-5 d-flex">
+          <div class="profile-pic d-flex justify-content-center align-items-center"><span><%= post.user.name.upcase[0, 2] %></span></div>
+            <div class="profile-info d-flex flex-column">
+              <span><%= post.user.name %></span> 
+              <small><%= post.user.email %></small> 
+            </div>
+          </div>
+        <% end %>
+     </div>
+   </article>
+  <% end %> 
+  </div>
+  
+</div>

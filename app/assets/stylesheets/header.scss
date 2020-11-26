@@ -1,0 +1,51 @@
+@import 'bootstrap';
+
+.navbar {
+  background-color: rgb(17, 93, 235);
+  box-shadow: 0 0 7px rgb(126, 126, 126);
+  z-index: 10;
+
+  .navbar-start {
+    .title {
+      cursor: pointer;
+
+      .title-link {
+        color: white;
+        font-weight: 900;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar-end {
+    .nav-item {
+      height: 35px;
+
+      .link-items {
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 10px;
+        border: 3px solid white;
+        padding: 2px 10px;
+      }
+    }
+
+    .logout-link {
+      color: white;
+      font-weight: 600;
+    }
+
+    .profile-pic {
+      border: 3px solid white;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      line-height: 40px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}

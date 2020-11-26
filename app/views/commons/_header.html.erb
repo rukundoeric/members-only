@@ -1,0 +1,28 @@
+<nav class="navbar py-2 d-flex justify-content-between">
+  <div class="container">
+    <div class="navbar-start">
+      <div class="title">
+        <%= link_to  "MEMBERS-ONLY", root_path, class: 'title-link' %>
+        <span></span>
+      </div> 
+    </div>
+  
+    <div class="navbar-end d-flex">
+      <%- if user_signed_in? %>
+      <div class="nav-item d-flex align-items-center mr-5">
+        <%= link_to  "SIGN OUT", destroy_user_session_path, :method => :delete, class: 'link-items' %>
+      </div>
+      <div class="nav-item">
+        <div class="profile-pic d-flex justify-content-center align-items-center"><span><%= current_user.name.upcase[0, 2] %></span></div>
+      </div>
+      <% else %>
+      <div class="nav-item d-flex justify-content-center align-items-center">
+          <%= link_to "Log in", new_user_session_path, class: "link-items" %>
+      </div>
+      <div class="nav-item d-flex justify-content-center align-items-center">
+          <%= link_to "Sign up", new_user_registration_path, class: "link-items" %>
+      </div>
+      <% end %>
+    </div>
+ </div> 
+</nav>
